@@ -1,6 +1,111 @@
-<form name="agency-contact" method="POST" data-netlify="true" class="contact-form">
-    <input type="text" name="name" placeholder="Your Name" required />
-    <input type="email" name="email" placeholder="Your Email Address" required />
-    <textarea name="message" placeholder="Project Description Details..." required></textarea>
-    <button type="submit" class="btn btn-primary">Send Message</button>
-</form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Digifyme</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-container">
+            <a href="index.html" class="logo">DIGIFY<span>ME</span></a>
+            <nav class="navbar">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="services-hero">
+        <h1 class="large-title">GET IN TOUCH</h1>
+    </section>
+
+    <section class="contact-section">
+        <div class="contact-container">
+            
+            <div class="contact-info-panel">
+                <div class="info-item-card">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div>
+                        <h3>OUR LOCATION</h3>
+                        <p>Football Chowk, Khanewal, Pakistan</p>
+                    </div>
+                </div>
+
+                <div class="info-item-card">
+                    <i class="fa-solid fa-phone"></i>
+                    <div>
+                        <h3>CALL OR WHATSAPP</h3>
+                        <p>+92 328 9018784</p>
+                    </div>
+                </div>
+
+                <div class="info-item-card">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div>
+                        <h3>EMAIL US DIRECTLY</h3>
+                        <p>marketerdigital554@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-wrapper">
+                <form name="agency-contact" method="POST" data-netlify="true" class="premium-form">
+                    <div class="form-group">
+                        <label>YOUR NAME</label>
+                        <input type="text" name="name" placeholder="Enter your full name" required />
+                    </div>
+                    <div class="form-group">
+                        <label>YOUR EMAIL ADDRESS</label>
+                        <input type="email" name="email" placeholder="Enter your email address" required />
+                    </div>
+                    <div class="form-group">
+                        <label>PROJECT DESCRIPTION DETAILS</label>
+                        <textarea name="message" rows="6" placeholder="Describe your web design or marketing project..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary form-submit-btn">Send Message</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <div class="footer-col branding">
+                <h2>DIGIFY<span>ME</span></h2>
+                <p>High-end web design, precision WordPress development, premium video editing, and result-oriented digital marketing strategies.</p>
+            </div>
+            <div class="footer-col links">
+                <h3>SERVICES</h3>
+                <ul>
+                    <li><a href="services.html">Web Development</a></li>
+                    <li><a href="services.html">WordPress Styling</a></li>
+                    <li><a href="services.html">Digital Marketing</a></li>
+                </ul>
+            </div>
+            <div class="footer-col contact-info">
+                <h3>CONTACT</h3>
+                <p><i class="fa-solid fa-location-dot"></i> Football Chowk, Khanewal, Pakistan</p>
+                <p><i class="fa-solid fa-phone"></i> +92 328 9018784</p>
+                <p><i class="fa-solid fa-envelope"></i> marketerdigital554@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Digifyme. All Rights Reserved.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
