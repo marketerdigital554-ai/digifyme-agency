@@ -296,3 +296,102 @@ body {
 .social-icons a:hover {
     color: #ffcc00;
 }
+
+/* --- Contact Layout Form Additions --- */
+.contact-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: start;
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.contact-info-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.info-item-card {
+    background-color: #161616;
+    border: 1px solid #222;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.info-item-card i {
+    font-size: 30px;
+    color: #ffcc00;
+}
+
+.info-item-card h3 {
+    font-size: 14px;
+    color: #ffcc00;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+.info-item-card p {
+    font-family: 'Segoe UI', sans-serif;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.contact-form-wrapper {
+    background-color: #161616;
+    border: 1px solid #222;
+    padding: 40px;
+}
+
+.premium-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #ffcc00;
+}
+
+.premium-form input, .premium-form textarea {
+    background-color: #111111;
+    border: 1px solid #333;
+    padding: 15px;
+    color: #ffffff;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 14px;
+}
+
+.premium-form input:focus, .premium-form textarea:focus {
+    border-color: #ffcc00;
+    outline: none;
+}
+
+.form-submit-btn {
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+}
