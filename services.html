@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | Digifyme</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-container">
+            <a href="index.html" class="logo">DIGIFY<span>ME</span></a>
+            <nav class="navbar">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="services.html" class="nav-link active">Services</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="services-hero">
+        <h1 class="large-title">WHAT WE DO</h1>
+        <p>Premium specialized execution across web engineering and modern visual marketing tracks.</p>
+    </section>
+
+    <section class="services-grid-section">
+        <div class="services-container">
+            
+            <div class="service-box" onclick="openModal('web-modal')">
+                <i class="fa-solid fa-laptop-code service-icon"></i>
+                <h3>Web Development</h3>
+                <p>Custom HTML5/CSS3/JS deployments and high-converting performance frameworks.</p>
+                <span class="read-more">Learn More <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+
+            <div class="service-box" onclick="openModal('wp-modal')">
+                <i class="fa-brands fa-wordpress service-icon"></i>
+                <h3>WordPress Design</h3>
+                <p>Bespoke corporate structures, element-level styling adjustments, and custom e-commerce engines.</p>
+                <span class="read-more">Learn More <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+
+            <div class="service-box" onclick="openModal('marketing-modal')">
+                <i class="fa-solid fa-bullhorn service-icon"></i>
+                <h3>Digital Marketing</h3>
+                <p>Data-driven targeted campaigns designed to scale leads, visibility, and direct sales volume.</p>
+                <span class="read-more">Learn More <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+
+        </div>
+    </section>
+
+    <div id="web-modal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('web-modal')">&times;</span>
+            <h2>Custom Web Architecture</h2>
+            <hr>
+            <p>Our custom web solutions target optimized page loads, robust architectural security, and clean modern styling paradigms using advanced tools. No boilerplate templates—just high-performance clean code customized precisely for your business application requirements.</p>
+        </div>
+    </div>
+
+    <div id="wp-modal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('wp-modal')">&times;</span>
+            <h2>Premium WordPress Infrastructure</h2>
+            <hr>
+            <p>Managed execution covering full page builder optimization, custom hooks, performance tuning, and clean database configuration setups. Enjoy complete content control paired with professional security engineering.</p>
+        </div>
+    </div>
+
+    <div id="marketing-modal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('marketing-modal')">&times;</span>
+            <h2>Targeted Lead Acquisition</h2>
+            <hr>
+            <p>Strategic advertising management crossing multiple social networks. Focused optimizations designed specifically to secure relevant brand exposure and maximize your client acquisition ROI tracking parameters.</p>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
