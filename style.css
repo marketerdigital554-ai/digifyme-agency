@@ -1,34 +1,22 @@
-/* --- Global Reset & Color Palette --- */
+/* --- Global Reset & Color Palette (Matches Dark Theme) --- */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-:root {
-    --bg-primary: #121212;
-    --bg-secondary: #1a1a1a;
-    --accent-gold: #ffcc00;
-    --text-pure: #ffffff;
-    --text-muted: #b3b3b3;
-    --card-hover: #252525;
+    font-family: 'Arial Black', Gadget, sans-serif; /* Clean high-impact text look */
 }
 
 body {
-    background-color: var(--bg-primary);
-    color: var(--text-pure);
+    background-color: #111111;
+    color: #ffffff;
     overflow-x: hidden;
 }
 
-/* --- Header & Layout Elements --- */
+/* --- Header Section Styling --- */
 .main-header {
-    background-color: rgba(18, 18, 18, 0.95);
-    border-bottom: 2px solid var(--accent-gold);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    padding: 15px 0;
+    background-color: #111111;
+    border-bottom: 1px solid #222;
+    padding: 25px 0;
 }
 
 .header-container {
@@ -41,202 +29,217 @@ body {
 }
 
 .logo {
-    font-size: 28px;
-    font-weight: 900;
-    letter-spacing: 2px;
+    font-size: 26px;
+    color: #ffffff;
     text-decoration: none;
-    color: var(--text-pure);
+    font-weight: 900;
+    letter-spacing: 1px;
 }
 
 .logo span {
-    color: var(--accent-gold);
+    color: #ffcc00;
 }
 
 .navbar a {
-    color: var(--text-pure);
+    color: #ffffff;
     text-decoration: none;
     margin-left: 25px;
-    font-weight: 600;
-    text-transform: uppercase;
     font-size: 14px;
-    transition: color 0.3s ease;
+    text-transform: uppercase;
+    transition: color 0.2s ease;
 }
 
 .navbar a:hover, .navbar a.active {
-    color: var(--accent-gold);
+    color: #ffcc00;
 }
 
-/* --- Hero Layout Section --- */
+/* --- Hero Banner Layout (Matches image_fa9275.jpg) --- */
 .hero-section {
-    position: relative;
-    height: 85vh;
-    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)), url('https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?q=80&w=1470') center/cover no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 120px 20px;
     text-align: center;
-    padding: 0 20px;
-}
-
-.hero-subtitle {
-    color: var(--accent-gold);
-    font-weight: 700;
-    letter-spacing: 4px;
-    margin-bottom: 15px;
+    background: linear-gradient(rgba(17,17,17,0.85), rgba(17,17,17,0.95)), url('https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?q=80&w=1200') center/cover no-repeat;
+    border-bottom: 2px solid #ffcc00;
 }
 
 .hero-title {
-    font-size: 65px;
-    font-weight: 900;
+    font-size: 60px;
+    color: #ffcc00;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: -1px;
     margin-bottom: 20px;
 }
 
 .hero-desc {
-    max-width: 700px;
-    margin: 0 auto 35px auto;
-    color: var(--text-muted);
-    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    color: #cccccc;
+    font-size: 16px;
     line-height: 1.6;
 }
 
-/* --- Buttons --- */
-.btn {
-    display: inline-block;
-    padding: 14px 32px;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 1px;
-    transition: all 0.3s ease;
-    border-radius: 4px;
-}
-
-.btn-primary {
-    background-color: var(--accent-gold);
-    color: #000;
-}
-
-.btn-primary:hover {
-    background-color: #e6b800;
-    transform: translateY(-2px);
-}
-
-.btn-outline {
-    border: 2px solid var(--text-pure);
-    color: var(--text-pure);
-    margin-left: 15px;
-}
-
-.btn-outline:hover {
-    background-color: var(--text-pure);
-    color: #000;
-}
-
-/* --- Team & Services Grids --- */
-.team-section, .services-grid-section {
-    padding: 90px 20px;
-    background-color: var(--bg-secondary);
-}
-
-.section-container {
-    max-width: 1200px;
-    margin: 0 auto;
+/* --- Professional Experience Accent Box (Matches image_fa9259.jpg) --- */
+.experience-banner {
+    padding: 60px 20px;
     text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=1200') center/cover no-repeat;
+    border-bottom: 1px solid #222;
 }
 
-.section-title {
-    font-size: 38px;
+.experience-banner h2 {
+    font-size: 36px;
+    color: #ffcc00;
     letter-spacing: 1px;
-    margin-bottom: 50px;
-    color: var(--text-pure);
+}
+
+/* --- Team and Grid Sections --- */
+.team-section, .services-grid-section {
+    padding: 80px 20px;
+}
+
+.services-hero {
+    padding: 60px 20px;
+    text-align: center;
+    color: #ffcc00;
+}
+
+.section-title, .large-title {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #ffffff;
 }
 
 .team-grid, .services-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .team-card, .service-box {
-    background-color: var(--bg-primary);
-    border: 1px solid #2a2a2a;
-    padding: 40px 30px;
-    border-radius: 6px;
+    background-color: #161616;
+    border: 1px solid #222;
+    padding: 40px 25px;
+    text-align: center;
     transition: all 0.3s ease;
     cursor: pointer;
 }
 
 .team-card:hover, .service-box:hover {
-    transform: translateY(-10px);
-    border-color: var(--accent-gold);
-    background-color: var(--card-hover);
+    border-color: #ffcc00;
+    transform: translateY(-5px);
+}
+
+.team-card h3, .service-box h3 {
+    font-size: 20px;
+    color: #ffffff;
+    margin: 15px 0 10px 0;
+}
+
+.role, .service-box p {
+    font-family: 'Segoe UI', sans-serif;
+    color: #999999;
+    font-size: 14px;
 }
 
 .team-icon-box, .service-icon {
-    font-size: 45px;
-    color: var(--accent-gold);
-    margin-bottom: 20px;
+    font-size: 36px;
+    color: #ffcc00;
 }
 
-/* --- Popup Modals Management --- */
+.read-more {
+    display: inline-block;
+    margin-top: 15px;
+    color: #ffcc00;
+    font-size: 13px;
+}
+
+/* --- Core Button Architecture --- */
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+}
+
+.btn-primary {
+    background-color: #ffcc00;
+    color: #111111;
+}
+
+.btn-primary:hover {
+    background-color: #ffffff;
+}
+
+.btn-outline {
+    border: 1px solid #ffcc00;
+    color: #ffcc00;
+    margin-left: 10px;
+}
+
+.btn-outline:hover {
+    background-color: #ffcc00;
+    color: #111111;
+}
+
+/* --- Interactive Popups Modals Area --- */
 .modal-overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: rgba(0,0,0,0.9);
     display: none;
     align-items: center;
     justify-content: center;
     z-index: 2000;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.modal-overlay.active {
-    display: flex;
-    opacity: 1;
 }
 
 .modal-content {
-    background-color: var(--bg-secondary);
-    border: 2px solid var(--accent-gold);
+    background-color: #161616;
+    border: 1px solid #ffcc00;
     padding: 40px;
+    max-width: 500px;
     width: 90%;
-    max-width: 600px;
     position: relative;
-    border-radius: 6px;
-    transform: scale(0.8);
-    transition: transform 0.3s ease;
+    text-align: center;
 }
 
-.modal-overlay.active .modal-content {
-    transform: scale(1);
+.modal-content h2 {
+    color: #ffcc00;
+    margin-bottom: 15px;
+}
+
+.modal-content p {
+    font-family: 'Segoe UI', sans-serif;
+    color: #cccccc;
+    line-height: 1.6;
 }
 
 .close-btn {
     position: absolute;
-    top: 15px;
-    right: 25px;
-    font-size: 35px;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
     cursor: pointer;
-    color: var(--text-muted);
+    color: #999999;
 }
 
 .close-btn:hover {
-    color: var(--accent-gold);
+    color: #ffcc00;
 }
 
-/* --- Footer Area --- */
+/* --- Footer Management (Matches image_fa9239.png) --- */
 .main-footer {
-    background-color: var(--bg-primary);
-    border-top: 1px solid #2a2a2a;
-    padding: 60px 20px 20px 20px;
+    background-color: #111111;
+    border-top: 1px solid #222;
+    padding: 60px 20px 30px 20px;
+    margin-top: 60px;
 }
 
 .footer-grid {
@@ -245,22 +248,51 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 40px;
-    padding-bottom: 40px;
+}
+
+.footer-col h3 {
+    color: #ffcc00;
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li a {
+    font-family: 'Segoe UI', sans-serif;
+    color: #999999;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.footer-col p {
+    font-family: 'Segoe UI', sans-serif;
+    color: #999999;
+    font-size: 14px;
+    margin-bottom: 10px;
 }
 
 .footer-bottom {
     max-width: 1200px;
-    margin: 0 auto;
-    border-top: 1px solid #2a2a2a;
+    margin: 40px auto 0 auto;
+    border-top: 1px solid #222;
     padding-top: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
 }
 
-/* --- Responsive Adjustments --- */
-@media (max-width: 768px) {
-    .hero-title { font-size: 42px; }
-    .navbar { display: none; } /* Add your burger transformation toggle here */
+.social-icons a {
+    color: #ffffff;
+    margin-left: 15px;
+    font-size: 18px;
+    transition: color 0.2s;
+}
+
+.social-icons a:hover {
+    color: #ffcc00;
 }
